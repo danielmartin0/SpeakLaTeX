@@ -1,6 +1,6 @@
 # SpeakLaTeX
 
-SpeakLaTeX is a ready-to-use app for macOS that assists dictation software to write mathematics, typeset in LaTeX.
+SpeakLaTeX 1.0.2 is a ready-to-use app for macOS that assists dictation software to write mathematics, typeset in LaTeX.
 
 ## Prerequisites
 
@@ -52,17 +52,13 @@ The output of this dictation will be
 
 The stored commands in SpeakLaTeX do most of the heavy lifting, and thus the Regex may be ignored for elementary use. We see that in this case, the Regex served as a shortcut to allow the speaker to omit the word 'fraction'.
 
-## Versioning
-
-The current version of SpeakLaTeX is v1.0.2. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Daniel Martin**
 
-## License
+## Development
 
-This project is licensed under the GNU Affero General Public License - see the [LICENSE.md](LICENSE.md) file for details
+SpeakLaTeX is written in Swift and released under the GNU Affero General Public License. The author is happy for people to contact him if they wish to collaborate on development.
 
 ## Acknowledgments
 
