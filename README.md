@@ -60,7 +60,7 @@ With help from the documentation, and by examining the default commands, customi
 
 ## Contribute
 
-SpeakLaTeX is written in Swift and released under the GNU Affero General Public License. This app was originally developed for commercial released and then was switched to open-source. Please contact the author if you'd like to assist him on development.
+SpeakLaTeX is written in Swift and released under the GNU Affero General Public License. This app was originally developed for commercial released and then was switched to open-source. There are several aspects I would improve if I were to write it again. Feel free to contact me if you'd like to assist with development.
 
 Comments or questions welcome at speaklatex@gmail.com.
 
