@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SpeakLaTeX" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="mun-El-LYu" customClass="StatusMenuController" customModule="SpeakLaTeX" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="faz-l5-IRb" id="BTP-2q-6rb"/>
+            </connections>
+        </customObject>
+        <menu autoenablesItems="NO" id="faz-l5-IRb" userLabel="statusMenu">
+            <items>
+                <menuItem title="About SpeakLaTeX" id="1TT-HY-Ah1" userLabel="About SpeakLaTeX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="AboutSpeakLaTeXWindow:" target="mun-El-LYu" id="ZNQ-h5-uXN"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="cxa-ju-keF"/>
+                <menuItem title="macOS Dictation" tag="2" id="Rbg-3r-NSL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleAssistant:" target="mun-El-LYu" id="BHl-pB-RNK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="AER-zo-rha"/>
+                <menuItem title="Edit Commands..." id="cqH-gd-ucj" userLabel="Edit SpeakLaTeX Commands...">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="recognisedCommandsClicked:" target="mun-El-LYu" id="vKm-oh-5az"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Advanced: Edit Regex..." id="C9m-Co-R4m" userLabel="Advanced: Edit SpeakLaTeX Regex...">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="regexClicked:" target="mun-El-LYu" id="2dJ-Yy-VvL"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Xcz-Fv-Arj"/>
+                <menuItem title="Add Command Alias..." id="MVw-fu-6hu" userLabel="Add Command Alias...">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="addRecognisedWord:" target="mun-El-LYu" id="9cr-KR-dtT"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="RAq-Fb-fAN"/>
+                <menuItem title="Export..." id="RPr-Gp-vCp" userLabel="Export...">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Export..." id="U79-Jn-lRi">
+                        <items>
+                            <menuItem title="Commands for Dragon® for Mac v6 to Desktop" id="7qe-MV-hpE">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeXMLCommands:" target="mun-El-LYu" id="2jf-uw-BwX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Mjd-nX-Tya"/>
+                            <menuItem title="Stored Commands to Desktop as .txt" id="rMo-Up-XG5">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="backupCommandsAsTxt:" target="mun-El-LYu" id="kix-ac-WcT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Default Commands to Desktop as .txt" id="mBf-s0-ebS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="exportDefaultCommandsAsTxt:" target="mun-El-LYu" id="bGi-Kd-lEk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="IF9-0m-LgV"/>
+                            <menuItem title="Stored Regex to Desktop as .txt" id="zH8-1G-4EL">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="backupRegexAsTxt:" target="mun-El-LYu" id="6kl-ea-l1F"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Default Regex to Desktop as .txt" id="C6F-y8-3qF">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="exportDefaultRegexAsTxt:" target="mun-El-LYu" id="Npn-py-qfV"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="APb-He-WTL"/>
+                <menuItem title="Phonetic Crib Sheet..." id="tgq-Ct-vsH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="phoneticHelper:" target="mun-El-LYu" id="nf0-gq-JDi"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Help" id="k4f-6n-qcX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" id="Bte-fR-RYf">
+                        <items>
+                            <menuItem title="SpeakLaTeX User Guide" id="tk8-1M-NRV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="HelpMainWindow:" target="mun-El-LYu" id="rCy-VH-MBe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Commands Syntax Reference" id="2sj-UF-6Ib">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="HelpSyntaxWindow:" target="mun-El-LYu" id="0lt-6d-lWx"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Xnx-6g-nwh"/>
+                <menuItem title="Quit SpeakLaTeX" id="E35-Tu-WpN">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="mun-El-LYu" id="K6z-xU-CoN"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="mun-El-LYu" id="fHL-Ls-LlF"/>
+            </connections>
+        </menu>
+        <menu title="Main Menu" systemMenu="main" id="fff-8L-BZV">
+            <items>
+                <menuItem title="Edit" id="n3n-W6-u4z">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="ipv-OB-lL9">
+                        <items>
+                            <menuItem title="Close" keyEquivalent="w" id="LwS-tN-51M">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="1Na-sa-LS7"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Minimize" keyEquivalent="m" id="xVr-2d-iEE">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="3Jq-Sb-NPW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Undo" keyEquivalent="z" id="Mm6-BC-6uE">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="ukj-k7-I5s"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="kl9-oa-5FI">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="MHp-E4-MbD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ooO-UN-4fI"/>
+                            <menuItem title="Cut" keyEquivalent="x" id="QCI-Wm-NP6">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="k9Z-kQ-9cl"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="1R3-Df-bOj">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="zT1-Q8-1Lh"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="eUW-pN-br3">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="LHV-Rp-Moy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="Mib-fB-ulH">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="pasteAsPlainText:" target="-1" id="fw3-gv-fwQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="xQw-ZT-sjI">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="YBc-vN-3wM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="3RZ-iq-9pg">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="Dt0-ef-RdI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="IQS-Ik-gi1"/>
+                            <menuItem title="Find" id="dmX-Z8-aRV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Find" id="5eH-fy-cKM">
+                                    <items>
+                                        <menuItem title="Find…" tag="1" keyEquivalent="f" id="9ly-vX-shb">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="X4n-rv-8l3"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find and Replace…" tag="12" keyEquivalent="f" id="eUA-TK-dGb">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="XfO-LU-llP"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Next" tag="2" keyEquivalent="g" id="UMT-5y-rT1">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="PBO-Kp-ggx"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="Ugt-GC-HMU">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="rFn-Ur-wVu"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="2SG-0x-V27">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="4d8-Sl-o7k"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="OBc-2y-RyQ">
+                                            <connections>
+                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="KVP-0h-MYS"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="355" y="-47"/>
+        </menu>
+    </objects>
+</document>
