@@ -47,7 +47,7 @@ Each command replaces the command word by its defined output on the right. In th
 
 The output of this dictation will be
 ```
-\frac{ 3 \alpha } { 5 \beta }
+\frac{ 3 \alpha }{ 5 \beta }
 ```
 
 The stored commands in SpeakLaTeX do most of the heavy lifting, and thus the Regex may be ignored for elementary use. We see that in this case, the Regex served as a shortcut to allow the speaker to omit the word 'fraction'.
