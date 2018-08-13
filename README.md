@@ -41,7 +41,7 @@ over|other: }{ "" }
 ```
 Observe that any of a set of similar-sounding aliases activate this command. This is to correct for misheard words.
 
-Each command replaces the command word by its defined output on the right. In the case of 'over', the defined output includes two double-quotes. This syntax means that any further output for this string will be placed inside the quotes, unless the special keyword "break" is used.
+Each command replaces the command word by its defined output on the right. In the case of 'over', the defined output includes two double-quotes. This syntax means that any further output for this string will be placed inside the quotes, unless the special keyword "break" is used. Further syntax details are available within the app or at https://github.com/danielmartin0/SpeakLaTeX/wiki.
 
 The output of this dictation will be
 ```
@@ -49,6 +49,8 @@ The output of this dictation will be
 ```
 
 The stored commands in SpeakLaTeX do most of the heavy lifting, and thus the Regex may be ignored for elementary use. We see that in this case, the Regex served as a shortcut to allow the speaker to omit the word 'fraction'.
+
+Customize the commands of SpeakLaTeX to your will, and please send anything cool you make to danielmartin111@gmail.com.
 
 ## Authors
 
