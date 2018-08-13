@@ -16,19 +16,15 @@ For configuration with Dragon® for Mac v6, follow the instructions in the Speak
 
 SpeakLaTeX has documentation within the app for new users.
 
-## Customisation
+## Interpretation of speech into LaTeX
 
-The way in which SpeakLaTeX interprets input text into LaTeX is fully customisable from within the app.
-
-### Details
-
-Interpretation in SpeakLaTeX is controlled by a two-step process.
+The way in which SpeakLaTeX interprets input text into LaTeX is fully customisable from within the app. Interpretation in SpeakLaTeX is controlled by a two-step process.
 
 An isolated input string is delivered to SpeakLaTeX, e.g.:
 ```
 three alpha over five beta
 ```
-The first step is for a set of find-and-replace regular expressions to act on the string. The default settings take this to:
+The first step is for a set of find-and-replace regular expressions ('Regex') to act on the string. The default settings take this to:
 ```
 fraction three alpha over five beta
 ```
@@ -47,6 +43,8 @@ The output of this dictation will be
 ```
 \frac{ 3 \alpha } { 5 \beta }
 ```
+
+The stored commands in SpeakLaTeX do most of the heavy lifting, and thus the Regex may be ignored for elementary use. We see that in this case, the Regex served as a shortcut to allow the speaker to omit the word 'fraction'.
 
 ## Versioning
 
