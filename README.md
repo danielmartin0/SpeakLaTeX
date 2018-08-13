@@ -2,7 +2,7 @@
 
 SpeakLaTeX is a ready-to-use app for macOS that assists dictation software to write mathematics, typeset in LaTeX.
 
-### Prerequisites
+## Prerequisites
 
 macOS 10.10 or later is required.
 
