@@ -24,7 +24,7 @@ SpeakLaTeX has documentation within the app for new users.
 
 ## Interpretation of speech into LaTeX
 
-The way in which SpeakLaTeX interprets input text into LaTeX is fully customisable from within the app. Interpretation in SpeakLaTeX is controlled by a two-step process.
+The way in which SpeakLaTeX interprets input text into LaTeX is fully customisable from within the app. The interpretation settings are stored locally on the computer, and can be exported or imported (again from within the app). Interpretation in SpeakLaTeX is controlled by a two-step process.
 
 An isolated input string is delivered to SpeakLaTeX, e.g.:
 ```
