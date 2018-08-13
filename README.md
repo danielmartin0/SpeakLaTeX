@@ -16,9 +16,7 @@ A microphone that can pick up clear speech is required.
 
 A compiled executable for SpeakLaTeX is included in this GitHub repository. Simply download it and move it to the applications folder to run. The app runs as a menu bar application in the top right of the screen.
 
-Once configured to work with Dragon® for Mac, a dictation beginning with a mathematical word will cause Dragon to pass commands to SpeakLaTeX, which will then paste LaTeX into the open window.
-
-For configuration with Dragon® for Mac v6, follow the instructions in the SpeakLaTeX menu under Export… ⟶ Commands for Dragon® for Mac v6 to Desktop.
+For configuration with Dragon® for Mac v6, follow the instructions in the SpeakLaTeX menu under Export… ⟶ Commands for Dragon® for Mac v6 to Desktop. Once configured, a dictation to Dragon that starts with a mathematical word will cause Dragon to pass commands to SpeakLaTeX, which will then paste LaTeX into the open window.
 
 New users should consult the app's Help section.
 
