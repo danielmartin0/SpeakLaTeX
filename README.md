@@ -63,3 +63,5 @@ SpeakLaTeX is written in Swift and released under the GNU Affero General Public 
 ## Acknowledgments
 
 Dragon® is a trademark of Nuance Communications, Inc., and/or its subsidiaries in the United States and/or other countries.
+
+Thanks to Lulie Tanett for her graphical work in creating the app icons.
