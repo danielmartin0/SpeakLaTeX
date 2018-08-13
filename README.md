@@ -1,4 +1,6 @@
 # SpeakLaTeX
+https://github.com/danielmartin0/SpeakLaTeX
+
 
 SpeakLaTeX 1.0.2 is a ready-to-use app for macOS that assists dictation software to write mathematics, typeset in LaTeX.
 
