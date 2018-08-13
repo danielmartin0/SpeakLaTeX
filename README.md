@@ -4,7 +4,7 @@ https://github.com/danielmartin0/SpeakLaTeX
 
 SpeakLaTeX 1.0.2 is a ready-to-use app for macOS that assists dictation software to write mathematics, typeset in LaTeX. It receives text input from dictation software, and then pastes the text, interpreted as LaTeX.
 
-An example of SpeakLaTeX in use with Dragon® for Mac v6 is on YouTube at https://www.youtube.com/watch?v=ay1LyHgUIjY.
+An example of SpeakLaTeX assisting Dragon® for Mac v6 is on YouTube at https://www.youtube.com/watch?v=ay1LyHgUIjY.
 
 ## Prerequisites
 
