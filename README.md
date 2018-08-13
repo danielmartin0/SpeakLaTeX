@@ -43,7 +43,10 @@ Observe that any of a set of similar-sounding aliases activate this command. Thi
 
 Each command replaces the command word by its defined output on the right. In the case of 'over', the defined output includes two double-quotes. This syntax means that any further output for this string will be placed inside the quotes, unless the special keyword "break" is used.
 
-The output of this dictation will be \frac{ 3 \alpha } { 5 \beta }.
+The output of this dictation will be
+```
+\frac{ 3 \alpha } { 5 \beta }
+```
 
 ## Versioning
 
