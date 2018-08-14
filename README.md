@@ -52,7 +52,7 @@ The output of this dictation will be
 
 The stored commands in SpeakLaTeX do most of the heavy lifting, and thus the Regex may be ignored for elementary use. We see that in this case, the Regex served as a shortcut to allow the speaker to omit the word 'fraction'.
 
-With help from the documentation, and by examining the default commands, customize SpeakLaTeX to your will. User settings are stored locally on the machine, and can be exported and imported if you change machine. I'd appreciate any snippets of SpeakLaTeX code that you'd like to share - send them to speaklatex@gmail.com.
+With help from the documentation, and by examining the default commands, SpeakLaTeX can be customized. User settings are stored locally on the machine, and can be exported and imported if you change machine. I'd appreciate any snippets of SpeakLaTeX code that you'd like to share - send them to speaklatex@gmail.com.
 
 ## Authors
 
