@@ -62,8 +62,6 @@ With help from the documentation, and by examining the default commands, SpeakLa
 
 SpeakLaTeX is written in Swift and released under the GNU Affero General Public License. This app was originally developed for commercial release and then was switched to open-source. There are many aspects I would improve if I were to write it again.
 
-Comments or questions welcome at speaklatex@gmail.com.
-
 ## Acknowledgments
 
 Dragon® is a trademark of Nuance Communications, Inc., and/or its subsidiaries in the United States and/or other countries.
